@@ -1,12 +1,11 @@
 import sqlite3
-from models.password.password import Password
 from models.password_value.password_value import PasswordValue
 from utils.logger import log
 import traceback
 
 
 def connection(*args):
-    con = sqlite3.connect('automation.db')
+    con = sqlite3.connect('models/automation.db')
     con.execute('PRAGMA foreign_keys = ON;')
     return con
 
@@ -72,16 +71,16 @@ class PasswordDAO:
         finally:
             con.close()
 
-    def delete(value, user_id):
+    def delete(password_id, user_id):
         con = connection()
         cursor = con.cursor()
 
         query = """
-                DELETE FROM passwords WHERE value = ? and user_id = ?
+                DELETE FROM passwords WHERE id = ? and user_id = ?
                 """
         
         try:
-            cursor.execute(query, (value, user_id))
+            cursor.execute(query, (password_id, user_id))
             con.commit()
         except ConnectionError as e:
             log(f'{__file__} - {traceback.format_exc()}')
