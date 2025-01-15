@@ -220,25 +220,24 @@ def main(page: ft.Page):
             log(f'{__file__} - {traceback.format_exc()}')
 
     def save_password():
-        """
-        function that creates a password component 
-        and the object in database
-        """
         try:
-            if password_field.value != '':
-                passwords = PasswordDAO.get_all(user_id=user.get_id())
-                password = [pw for pw in passwords for control in list_passwords.controls if pw[1]==control.controls[1]]
-                if password != None:
-                    PasswordFactory.create(value=password_field.value, user_id=user.get_id())
-                    password_validation_text.value = ''
-                    password_validation_text.update()
-                    update_listview()
-                else:
+            # Check if the password already exists
+            passwords = PasswordDAO.get_all(user_id=user.get_id())
+            for _, pw in enumerate(passwords):
+                decrypted_password = Password.decrypt_value(pw[1])
+                if decrypted_password == password_field.value:
+                    # Show error message if password already exists
                     password_validation_text.value = 'This passwords its already saved'
                     password_validation_text.update()
-            else:
-                password_validation_text.value = 'Needs to be a password generated to save it...'
-                password_validation_text.update()
+                    return
+
+            # Process and save the new password
+            processed_value = PasswordFactory.processing_password(password_field.value)
+            PasswordDAO.create(password=processed_value, user_id=user.get_id())
+            ValueDAO.create(processed_value)
+
+            # Update the list view
+            update_listview()
         except Exception as e:
             log(f'{__file__} - {traceback.format_exc()}')
     
