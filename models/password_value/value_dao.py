@@ -5,7 +5,7 @@ import traceback
 
 
 def connection(*args):
-    con = sqlite3.connect('automation.db')
+    con = sqlite3.connect('models/automation.db')
     con.execute('PRAGMA foreign_keys = ON;')
     return con
 
@@ -76,7 +76,7 @@ class ValueDAO:
         try:
             cursor.execute("DELETE FROM password_values WHERE password_id = ?", (password_id,))
             con.commit()
-        except ConnectionError as e:
+        except Exception as e:
             log(f'{__file__} - {traceback.format_exc()}')
         finally:
             con.close()

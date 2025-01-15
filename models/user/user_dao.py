@@ -1,9 +1,10 @@
 import sqlite3
 from utils.logger import log
+import traceback
 
 
 def connection(*args):
-    con = sqlite3.connect('automation.db')
+    con = sqlite3.connect('models/automation.db')
     con.execute('PRAGMA foreign_keys = ON;')
     return con
 

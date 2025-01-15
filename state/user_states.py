@@ -10,7 +10,6 @@ class UserState(ABC):
     def __str__(self):
         pass
     
-
 class AuthenticatedState(UserState):
     def change_user_state(self, user):
         user.state = NotAuthenticatedState()

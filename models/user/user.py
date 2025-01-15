@@ -2,6 +2,7 @@ from state.user_states import NotAuthenticatedState, AuthenticatedState
 from models.password.hasher import hash_password
 from models.user.user_dao import UserDAO
 from utils.logger import log
+import traceback
 
 
 class User:
