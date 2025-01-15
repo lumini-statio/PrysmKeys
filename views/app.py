@@ -202,20 +202,14 @@ def main(page: ft.Page):
         except Exception as e:
             log(f'{__file__} - {traceback.format_exc()}')
     
-    def delete_password(password_component, password_id: int):
-        """
-        function that deletes a password component 
-        and the object in database
-        """
+    def delete_password(password_id):
         try:
-            passwords = PasswordDAO.get_all(user_id=user.get_id())
-            password = [pw for pw in passwords if pw[0] == password_id]
-
-            if password:
-                PasswordDAO.delete(value=password[0][1], user_id=user.get_id())
-                component = [comp for comp in list_passwords.controls if comp.key == password_id]
-                if component:
-                    update_listview()
+            # Delete the password from the database
+            PasswordDAO.delete(password_id, user.get_id())
+            ValueDAO.delete(password_id)
+            
+            # Update the list view
+            update_listview()
         except Exception as e:
             log(f'{__file__} - {traceback.format_exc()}')
 
@@ -277,7 +271,7 @@ def main(page: ft.Page):
                                             shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value)
                                         ),
                                         bgcolor=ft.Colors.RED_900,
-                                        on_click=lambda e:delete_password(password_component, pw[0])
+                                        on_click=lambda e:delete_password(pw[0])
                                     )
                                 ])
             list_passwords.controls.append(password_component)
