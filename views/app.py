@@ -245,45 +245,37 @@ def main(page: ft.Page):
             log(f'{__file__} - {traceback.format_exc()}')
     
     def update_listview():
-        # Clear all controls from the list
-        list_passwords.controls.clear()
-        list_passwords.update()
+        for control in list_passwords.controls:
+            list_passwords.controls.remove(control)
 
-        # Fetch all passwords from the database
         passwords = PasswordDAO.get_all(user_id=user.get_id())
-        log(passwords)
-
-        # Add each password to the list view
-        for _, pw in enumerate(passwords):
+        for pw in passwords:
             decrypted_password = Password.decrypt_value(pw[1])
             password_component = ft.Row([
-                ft.Text(
-                    f'{pw[0]}',
-                    size=Styles.MIN_TEXT_SIZE,
-                    color=ft.Colors.WHITE,
-                    width=300
-                ),
-                ft.Text(
-                    f'{decrypted_password}',
-                    size=Styles.MIN_TEXT_SIZE,
-                    expand=True,
-                    color=ft.Colors.WHITE
-                ),
-                ft.ElevatedButton(
-                    'Delete',
-                    color=ft.Colors.WHITE,
-                    style=ft.ButtonStyle(
-                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value)
-                    ),
-                    bgcolor=ft.Colors.RED_900,
-                    on_click=lambda e, pw_id=pw[0]: delete_password(pw_id)
-                )
-            ])
+                                    ft.Text(
+                                        f'{pw[0]}',
+                                        size=Styles.MIN_TEXT_SIZE,
+                                        color=ft.Colors.WHITE,
+                                        width=300
+                                    ),
+                                    ft.Text(
+                                        f'{decrypted_password}',
+                                        size=Styles.MIN_TEXT_SIZE,
+                                        expand=True,
+                                        color=ft.Colors.WHITE
+                                    ),
+                                    ft.ElevatedButton(
+                                        'Delete',
+                                        color=ft.Colors.WHITE,
+                                        style=ft.ButtonStyle(
+                                            shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value)
+                                        ),
+                                        bgcolor=ft.Colors.RED_900,
+                                        on_click=lambda e:delete_password(pw[0])
+                                    )
+                                ])
             list_passwords.controls.append(password_component)
-        list_passwords.update()
-
-        log(list_passwords.controls)
-
+            list_passwords.update()
             
 
     """
