@@ -1,0 +1,84 @@
+2025-02-04 15:45:15,277 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-04 15:45:15,277 - Starting up TCP server on localhost:60120
+2025-02-04 15:45:15,308 - Flet app has started...
+2025-02-04 15:45:15,324 - App URL: tcp://localhost:60120
+2025-02-04 15:45:15,324 - Starting Flet View app...
+2025-02-04 15:45:15,324 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:45:15,324 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:45:15,734 - App session started
+2025-02-04 15:45:54,251 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-04 15:45:54,263 - 1
+2025-02-04 15:49:30,575 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-04 15:49:30,590 - Starting up TCP server on localhost:60203
+2025-02-04 15:49:30,619 - Flet app has started...
+2025-02-04 15:49:30,619 - App URL: tcp://localhost:60203
+2025-02-04 15:49:30,619 - Starting Flet View app...
+2025-02-04 15:49:30,619 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:49:30,619 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:49:30,958 - App session started
+2025-02-04 15:50:36,400 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-04 15:50:36,416 - Starting up TCP server on localhost:60215
+2025-02-04 15:50:36,447 - Flet app has started...
+2025-02-04 15:50:36,447 - App URL: tcp://localhost:60215
+2025-02-04 15:50:36,447 - Starting Flet View app...
+2025-02-04 15:50:36,447 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:50:36,447 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:50:36,781 - App session started
+2025-02-04 15:50:44,953 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 64, in login
+    update_listview()
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 269, in update_listview
+    ft.FloatingActionButtonn(
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'flet' has no attribute 'FloatingActionButtonn'
+
+2025-02-04 15:50:49,459 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-04 15:50:49,467 - 2
+2025-02-04 15:50:49,480 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 232, in save_password
+    update_listview()
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 269, in update_listview
+    ft.FloatingActionButtonn(
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'flet' has no attribute 'FloatingActionButtonn'
+
+2025-02-04 15:51:19,182 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-04 15:51:19,197 - Starting up TCP server on localhost:60228
+2025-02-04 15:51:19,228 - Flet app has started...
+2025-02-04 15:51:19,228 - App URL: tcp://localhost:60228
+2025-02-04 15:51:19,228 - Starting Flet View app...
+2025-02-04 15:51:19,228 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:51:19,228 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:51:19,610 - App session started
+2025-02-04 15:51:25,401 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 64, in login
+    update_listview()
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 269, in update_listview
+    ft.FloatingActionButton(
+TypeError: FloatingActionButton.__init__() got an unexpected keyword argument 'color'
+
+2025-02-04 15:51:28,911 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-04 15:51:28,921 - 3
+2025-02-04 15:51:28,932 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 232, in save_password
+    update_listview()
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 269, in update_listview
+    ft.FloatingActionButton(
+TypeError: FloatingActionButton.__init__() got an unexpected keyword argument 'color'
+
+2025-02-04 15:52:12,384 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-04 15:52:12,384 - Starting up TCP server on localhost:60238
+2025-02-04 15:52:12,415 - Flet app has started...
+2025-02-04 15:52:12,431 - App URL: tcp://localhost:60238
+2025-02-04 15:52:12,431 - Starting Flet View app...
+2025-02-04 15:52:12,431 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:52:12,431 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:52:12,761 - App session started
+2025-02-04 15:54:53,181 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-04 15:54:53,181 - Starting up TCP server on localhost:60264
+2025-02-04 15:54:53,207 - Flet app has started...
+2025-02-04 15:54:53,222 - App URL: tcp://localhost:60264
+2025-02-04 15:54:53,222 - Starting Flet View app...
+2025-02-04 15:54:53,228 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:54:53,229 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-04 15:54:53,557 - App session started
