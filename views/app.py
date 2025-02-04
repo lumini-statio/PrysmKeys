@@ -269,15 +269,24 @@ def main(page: ft.Page):
                     width=300
                 ),
                 value,
-                ft.FloatingActionButton(
-                    icon=ft.Icons.COPY,
-                    on_click=copy_to_clipboard(value)
+                ft.ElevatedButton(
+                    'Copy',
+                    color=ft.Colors.WHITE,
+                    on_click=lambda e, field=value:copy_to_clipboard(field),
+                    style=ft.ButtonStyle(
+                        text_style=ft.TextStyle(size=15),
+                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value),
+                        padding=10
+                        ),
+                    bgcolor=ft.Colors.GREEN_700
                 ),
                 ft.ElevatedButton(
                     'Delete',
                     color=ft.Colors.WHITE,
                     style=ft.ButtonStyle(
-                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value)
+                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value),
+                        text_style=ft.TextStyle(size=15),
+                        padding=10
                     ),
                     bgcolor=ft.Colors.RED_900,
                     on_click=lambda e, pw_id=pw[0]: delete_password(pw_id)

@@ -193,12 +193,12 @@ def main(page: ft.Page):
         except Exception as e:
             log(f'{__file__} - {traceback.format_exc()}')
 
-    def copy_to_clipboard():
+    def copy_to_clipboard(field):
         """
         function to copy the password to clipboard
         """
         try:
-            page.set_clipboard(password_field.value)
+            page.set_clipboard(field.value)
         except Exception as e:
             log(f'{__file__} - {traceback.format_exc()}')
     
@@ -253,6 +253,14 @@ def main(page: ft.Page):
         # Add each password to the list view
         for _, pw in enumerate(passwords):
             decrypted_password = Password.decrypt_value(pw[1])
+
+            value = ft.Text(
+                    f'{decrypted_password}',
+                    size=Styles.MIN_TEXT_SIZE,
+                    expand=True,
+                    color=ft.Colors.WHITE
+                )
+            
             password_component = ft.Row([
                 ft.Text(
                     f'{pw[0]}',
@@ -260,17 +268,25 @@ def main(page: ft.Page):
                     color=ft.Colors.WHITE,
                     width=300
                 ),
-                ft.Text(
-                    f'{decrypted_password}',
-                    size=Styles.MIN_TEXT_SIZE,
-                    expand=True,
-                    color=ft.Colors.WHITE
+                value,
+                ft.ElevatedButton(
+                    'Copy',
+                    color=ft.Colors.WHITE,
+                    on_click=lambda e, field=value:copy_to_clipboard(field),
+                    style=ft.ButtonStyle(
+                        text_style=ft.TextStyle(size=15),
+                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value),
+                        padding=10
+                        ),
+                    bgcolor=ft.Colors.GREEN_700
                 ),
                 ft.ElevatedButton(
                     'Delete',
                     color=ft.Colors.WHITE,
                     style=ft.ButtonStyle(
-                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value)
+                        shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS.value),
+                        text_style=ft.TextStyle(size=15),
+                        padding=10
                     ),
                     bgcolor=ft.Colors.RED_900,
                     on_click=lambda e, pw_id=pw[0]: delete_password(pw_id)
@@ -521,7 +537,7 @@ def main(page: ft.Page):
                             ft.Row([
                                 ft.FloatingActionButton(
                                     icon=ft.Icons.COPY,
-                                    on_click=lambda e: copy_to_clipboard(),
+                                    on_click=lambda e: copy_to_clipboard(password_field),
                                     shape=ft.RoundedRectangleBorder(radius=Styles.BTN_RADIUS)
                                 ),
                                 ft.FloatingActionButton(
