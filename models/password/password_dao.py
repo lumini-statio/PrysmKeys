@@ -48,6 +48,8 @@ class PasswordDAO:
         try:
             cursor.execute(query, (password.crypted_password, user_id))
             con.commit()
+            last_row_id = cursor.lastrowid
+            return last_row_id
         except ConnectionError as e:
             log(f'{__file__} - {traceback.format_exc()}')
         finally:

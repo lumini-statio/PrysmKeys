@@ -38,6 +38,7 @@ class ValueDAO:
         finally:
             con.close()
     
+    @staticmethod
     def create(password_value: PasswordValue):
         con = connection()
         cursor = con.cursor()
@@ -51,8 +52,8 @@ class ValueDAO:
             return password_value
         except ConnectionError as e:
             log(f'{__file__} - {e}\nproblem with value creating function')
-
-        con.close()
+        finally:
+            con.close()
 
     def get_all():
         con = connection()

@@ -81,7 +81,7 @@ def main(page: ft.Page):
                         value=password_register_field.value
                     )
             exists = new_user['user_exists']
-            if exists:
+            if exists == False:
                 dialog = ft.AlertDialog(
                     title=ft.Text('User created successfully!')
                 )
@@ -226,10 +226,8 @@ def main(page: ft.Page):
                     return
 
             # Process and save the new password
-            processed_value = PasswordFactory.processing_password(password_field.value)
-            PasswordDAO.create(password=processed_value, user_id=user.get_id())
-            ValueDAO.create(processed_value)
-
+            PasswordFactory().create(password_field.value, user.get_id())
+            
             # Update the list view
             update_listview()
         except Exception as e:
@@ -251,7 +249,6 @@ def main(page: ft.Page):
 
         # Fetch all passwords from the database
         passwords = PasswordDAO.get_all(user_id=user.get_id())
-        log(passwords)
 
         # Add each password to the list view
         for _, pw in enumerate(passwords):

@@ -19,8 +19,11 @@ class PasswordFactory:
             crypted_value = crypted.encrypt(value.encode())
             password_value = PasswordValue(
                 crypted_password=crypted_value, 
-                key=key
+                key=key,
+                password_id=None
             )
+
+            log(f'tipo de contraseña encriptada {type(crypted_value)}')
             
             return password_value
 
@@ -29,18 +32,18 @@ class PasswordFactory:
         processed_value = cls.processing_password(value)
 
         PasswordDAO.create_table()
-        PasswordDAO.create(
-                        password=processed_value,
-                        user_id=user_id
-                    )
-        
-        passwords = PasswordDAO.get_all(user_id=user_id)
-        pw_object = [pw for pw in passwords if pw[1]==processed_value.crypted_password]
-        if pw_object:
-            processed_value.set_password_id(pw_object[0][0])
-        else:
-            log(f'{__file__} - pw_object is void')
+        password_id = PasswordDAO.create(
+            password=processed_value,
+            user_id=user_id
+        )
 
+        log(password_id)
+        
+        if password_id == None:
+            log(f'{__file__} - pw_object is void')
+            return None
+
+        processed_value.set_password_id(password_id)
         ValueDAO.create(processed_value)
 
-        return pw_object[0]
+        return password_id

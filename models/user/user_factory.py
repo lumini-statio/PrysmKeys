@@ -36,7 +36,7 @@ class UserFactory():
             UserDAO.create(user.username, user.password)
             users = UserDAO.get_all()
 
-            final_user = [user for user in users if final_user[1]==username and final_user[2]==password]
+            final_user = [user for user in users if user[1]==username and user[2]==password]
 
             if final_user != None:
                 user.set_id(final_user[0][0])
