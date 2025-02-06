@@ -70,9 +70,9 @@ def main(page: ft.Page):
     
     def register(e):
         """
-        tries to create a User with create function 
+        Tries to create a User with create function 
         that returns a boolean.
-          Then, shows the user an alert if the user
+        Then, shows the user an alert if the user
         was created or not.
         """
         try:
@@ -85,12 +85,18 @@ def main(page: ft.Page):
                 dialog = ft.AlertDialog(
                     title=ft.Text('User created successfully!')
                 )
-                page.overlay.append(dialog)
+                page.dialog = dialog 
                 dialog.open = True
+                
+                username_register_field.value = ''
+                password_register_field.value = ''
+                
+                close_register(e)
+                
                 page.update()
             else:
                 dialog = ft.AlertDialog(title=ft.Text('Cannot use these credentials'))
-                page.overlay.append(dialog)
+                page.dialog = dialog 
                 dialog.open = True
                 page.update()
         except Exception as e:
@@ -116,7 +122,6 @@ def main(page: ft.Page):
         """
         In charge to open the register form
         """
-        page.overlay.append(register_view)
         register_view.open = True
         page.update()
 
@@ -400,6 +405,8 @@ def main(page: ft.Page):
                 )
         ]
     )
+
+    page.overlay.append(register_view)
 
     # containter that shows the tool to duplicated files view
     content_area = ft.Container(
