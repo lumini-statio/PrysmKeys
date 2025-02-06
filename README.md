@@ -1,16 +1,16 @@
-# SePaGen v1.3.1
+# SePaGen v1.4.1
 
 ## Project target
 This is a project to store your passwords. You can create your user, passwords in different ways, login, logout, copy password's text, delete and list them.
   SePaGen counts with a hashing and crypting system to store your passwords and your data, so is a great application to store your passwords in a safe way.
 
 ## Installer
-You can download the compressed installer on the Releases v1.3.1, there is the installer of the app most updated version.
+You can download the compressed, in the latest Release, there are less bugs and security problems.
 
 ## Contributions
 If you want to continue the project development, you can fork the repository and create a pull request with your changes!
 > [!NOTE]
-> If your working on a update, will nice to have the code lastest version.
+> If your working on a update, will nice to have the code latest version.
 
 ## Clone the code, install dependencies and run the project on local
 You will need to get a virtual enviroment manager, like Anaconda, virtualenvwrapper or python virtualenv, here's how you proceed...
