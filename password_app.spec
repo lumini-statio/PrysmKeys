@@ -74,12 +74,12 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='SePaGen',  # Nombre de tu aplicación
+    name='SePaGen',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=False,  # Cambiar a True para ver la consola en desarrollo
+    console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
@@ -95,5 +95,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='my_flet_app',
+    name='SePaGen',
 )

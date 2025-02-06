@@ -148,3 +148,92 @@ TypeError: FloatingActionButton.__init__() got an unexpected keyword argument 'c
 2025-02-04 16:22:56,413 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
 2025-02-04 16:22:56,413 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
 2025-02-04 16:22:56,672 - App session started
+2025-02-05 23:16:19,054 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-05 23:16:19,058 - Starting up TCP server on localhost:54425
+2025-02-05 23:16:19,066 - Flet app has started...
+2025-02-05 23:16:19,074 - App URL: tcp://localhost:54425
+2025-02-05 23:16:19,074 - Starting Flet View app...
+2025-02-05 23:16:19,076 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:16:19,076 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:16:19,396 - App session started
+2025-02-05 23:16:48,041 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:48,047 - 1
+2025-02-05 23:16:50,009 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:50,016 - 2
+2025-02-05 23:16:51,449 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:51,456 - 3
+2025-02-05 23:16:52,593 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:52,599 - 4
+2025-02-05 23:16:53,903 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:53,910 - 5
+2025-02-05 23:16:55,350 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:55,358 - 6
+2025-02-05 23:16:59,344 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:16:59,350 - 7
+2025-02-05 23:17:28,496 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-05 23:17:28,498 - Starting up TCP server on localhost:54444
+2025-02-05 23:17:28,506 - Flet app has started...
+2025-02-05 23:17:28,511 - App URL: tcp://localhost:54444
+2025-02-05 23:17:28,511 - Starting Flet View app...
+2025-02-05 23:17:28,512 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:17:28,512 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:17:28,693 - App session started
+2025-02-05 23:22:24,950 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-05 23:22:24,952 - Starting up TCP server on localhost:54526
+2025-02-05 23:22:24,961 - Flet app has started...
+2025-02-05 23:22:24,967 - App URL: tcp://localhost:54526
+2025-02-05 23:22:24,967 - Starting Flet View app...
+2025-02-05 23:22:24,968 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:22:24,968 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:22:25,157 - App session started
+2025-02-05 23:22:38,315 - c:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "c:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\views\app.py", line 230, in save_password
+    PasswordFactory().create(password_field.value, user.get_id())
+  File "c:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\models\password\password_factory.py", line 35, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\models\password\password_dao.py", line 49, in create
+    cursor.execute(query, (password.crypted_password, user_id))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-05 23:22:40,967 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-05 23:22:40,974 - 8
+2025-02-05 23:27:30,730 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-05 23:27:30,731 - Starting up TCP server on localhost:54735
+2025-02-05 23:27:30,740 - Flet app has started...
+2025-02-05 23:27:30,747 - App URL: tcp://localhost:54735
+2025-02-05 23:27:30,747 - Starting Flet View app...
+2025-02-05 23:27:30,748 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:27:30,749 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-05 23:27:30,971 - App session started
+2025-02-06 00:50:03,648 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-06 00:50:03,650 - Starting up TCP server on localhost:57239
+2025-02-06 00:50:03,658 - Flet app has started...
+2025-02-06 00:50:03,664 - App URL: tcp://localhost:57239
+2025-02-06 00:50:03,664 - Starting Flet View app...
+2025-02-06 00:50:03,665 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-06 00:50:03,665 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-06 00:50:03,863 - App session started
+2025-02-06 00:51:56,958 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-06 00:51:56,959 - Starting up TCP server on localhost:57287
+2025-02-06 00:51:56,969 - Flet app has started...
+2025-02-06 00:51:56,975 - App URL: tcp://localhost:57287
+2025-02-06 00:51:56,975 - Starting Flet View app...
+2025-02-06 00:51:56,976 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-06 00:51:56,976 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-06 00:51:57,168 - App session started
+2025-02-06 00:52:06,011 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-06 00:52:06,018 - 9
+2025-02-06 00:52:08,450 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-06 00:52:08,457 - 10
+2025-02-06 00:52:09,517 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-06 00:52:09,524 - 11
+2025-02-06 00:53:35,075 - Assets path configured: C:\Users\Emili\OneDrive\Documentos\python\secure_password_generator_desktop\assets
+2025-02-06 00:53:35,076 - Starting up TCP server on localhost:57330
+2025-02-06 00:53:35,085 - Flet app has started...
+2025-02-06 00:53:35,091 - App URL: tcp://localhost:57330
+2025-02-06 00:53:35,091 - Starting Flet View app...
+2025-02-06 00:53:35,092 - Looking for Flet executable at: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-06 00:53:35,092 - Flet View found in: C:\Users\Emili\.conda\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-06 00:53:35,281 - App session started
