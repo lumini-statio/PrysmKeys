@@ -82,14 +82,15 @@ def main(page: ft.Page):
                     )
             exists = new_user['user_exists']
             if exists == False:
+                
+                username_register_field.value = ''
+                password_register_field.value = ''
+
                 dialog = ft.AlertDialog(
                     title=ft.Text('User created successfully!')
                 )
                 page.dialog = dialog 
                 dialog.open = True
-                
-                username_register_field.value = ''
-                password_register_field.value = ''
                 
                 close_register(e)
                 

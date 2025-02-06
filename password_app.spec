@@ -12,7 +12,6 @@ a = Analysis(
         ('models/password/*.py', 'models/password'),
         ('models/password_value/*.py', 'models/password_value'),
         ('models/user/*.py', 'models/user'),
-        ('logs/*.py', 'logs'),
         ('state/*.py', 'state'),
         ('utils/*.py', 'utils'),
         ('self_data.db', '.')
