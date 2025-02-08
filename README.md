@@ -1,5 +1,6 @@
 # SePaGen v1.4.1
-
+> [!NOTE]
+> You can find the installer on the latest release!
 ## Project target
 This is a project to store your passwords. You can create your user, passwords in different ways, login, logout, copy password's text, delete and list them.
   SePaGen counts with a hashing and crypting system to store your passwords and your data, so is a great application to store your passwords in a safe way.
