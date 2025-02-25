@@ -15,7 +15,8 @@ a = Analysis(
         ('logs/*.py', 'logs'),
         ('state/*.py', 'state'),
         ('utils/*.py', 'utils'),
-        ('self_data.db', '.')
+        ('data.db', '.'),
+        ('icon.ico', '.')
     ],
     hiddenimports=[
         'anyio._backends._asyncio',
@@ -74,17 +75,18 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='SePaGen',  # Nombre de tu aplicación
+    name='SePaGen',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=False,  # Cambiar a True para ver la consola en desarrollo
+    console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='icon.ico'
 )
 
 coll = COLLECT(
@@ -95,5 +97,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='my_flet_app',
+    name='SePaGen',
 )

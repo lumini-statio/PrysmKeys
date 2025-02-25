@@ -5,7 +5,7 @@ import traceback
 
 
 def connection(*args):
-    con = sqlite3.connect('automation.db')
+    con = sqlite3.connect('data.db')
     con.execute('PRAGMA foreign_keys = ON;')
     return con
 

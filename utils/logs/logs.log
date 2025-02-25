@@ -148,3 +148,390 @@ TypeError: FloatingActionButton.__init__() got an unexpected keyword argument 'c
 2025-02-04 16:22:56,413 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
 2025-02-04 16:22:56,413 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
 2025-02-04 16:22:56,672 - App session started
+2025-02-25 14:29:58,414 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 14:29:58,451 - Starting up TCP server on localhost:62490
+2025-02-25 14:29:58,502 - Flet app has started...
+2025-02-25 14:29:58,566 - App URL: tcp://localhost:62490
+2025-02-25 14:29:58,566 - Starting Flet View app...
+2025-02-25 14:29:58,568 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:29:58,570 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:30:42,666 - App session started
+2025-02-25 14:33:02,191 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 14:33:02,200 - Starting up TCP server on localhost:62592
+2025-02-25 14:33:02,226 - Flet app has started...
+2025-02-25 14:33:02,235 - App URL: tcp://localhost:62592
+2025-02-25 14:33:02,235 - Starting Flet View app...
+2025-02-25 14:33:02,237 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:33:02,237 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:33:02,502 - App session started
+2025-02-25 14:33:44,096 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 14:33:44,105 - Starting up TCP server on localhost:62604
+2025-02-25 14:33:44,130 - Flet app has started...
+2025-02-25 14:33:44,139 - App URL: tcp://localhost:62604
+2025-02-25 14:33:44,139 - Starting Flet View app...
+2025-02-25 14:33:44,141 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:33:44,141 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:33:44,412 - App session started
+2025-02-25 14:34:01,724 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\user\user.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\user\user.py", line 88, in login
+    return founded[0]
+           ~~~~~~~^^^
+IndexError: list index out of range
+
+2025-02-25 14:51:03,931 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 14:51:03,947 - Starting up TCP server on localhost:62894
+2025-02-25 14:51:03,962 - Flet app has started...
+2025-02-25 14:51:03,978 - App URL: tcp://localhost:62894
+2025-02-25 14:51:03,978 - Starting Flet View app...
+2025-02-25 14:51:03,978 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:51:03,978 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:51:14,419 - App session started
+2025-02-25 14:51:25,583 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\user\user.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\user\user.py", line 88, in login
+    return founded[0]
+           ~~~~~~~^^^
+IndexError: list index out of range
+
+2025-02-25 14:51:48,850 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-25 14:51:48,868 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 14:52:20,186 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 14:52:20,192 - Starting up TCP server on localhost:62945
+2025-02-25 14:52:20,208 - Flet app has started...
+2025-02-25 14:52:20,223 - App URL: tcp://localhost:62945
+2025-02-25 14:52:20,223 - Starting Flet View app...
+2025-02-25 14:52:20,223 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:52:20,223 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:52:20,495 - App session started
+2025-02-25 14:53:36,612 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 14:53:36,612 - Starting up TCP server on localhost:62967
+2025-02-25 14:53:36,645 - Flet app has started...
+2025-02-25 14:53:36,645 - App URL: tcp://localhost:62967
+2025-02-25 14:53:36,645 - Starting Flet View app...
+2025-02-25 14:53:36,661 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:53:36,661 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 14:53:36,905 - App session started
+2025-02-25 15:02:36,758 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:02:36,765 - Starting up TCP server on localhost:63158
+2025-02-25 15:02:36,781 - Flet app has started...
+2025-02-25 15:02:36,796 - App URL: tcp://localhost:63158
+2025-02-25 15:02:36,796 - Starting Flet View app...
+2025-02-25 15:02:36,796 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:02:36,796 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:02:37,093 - App session started
+2025-02-25 15:04:35,046 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:04:35,046 - Starting up TCP server on localhost:63265
+2025-02-25 15:04:35,077 - Flet app has started...
+2025-02-25 15:04:35,077 - App URL: tcp://localhost:63265
+2025-02-25 15:04:35,077 - Starting Flet View app...
+2025-02-25 15:04:35,092 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:04:35,092 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:04:35,348 - App session started
+2025-02-25 15:04:41,277 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:04:41,293 - Starting up TCP server on localhost:63274
+2025-02-25 15:04:41,315 - Flet app has started...
+2025-02-25 15:04:41,315 - App URL: tcp://localhost:63274
+2025-02-25 15:04:41,315 - Starting Flet View app...
+2025-02-25 15:04:41,315 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:04:41,315 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:04:41,570 - App session started
+2025-02-25 15:07:58,054 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:07:58,055 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-25 15:15:41,104 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:15:41,108 - Starting up TCP server on localhost:63695
+2025-02-25 15:15:41,135 - Flet app has started...
+2025-02-25 15:15:41,151 - App URL: tcp://localhost:63695
+2025-02-25 15:15:41,151 - Starting Flet View app...
+2025-02-25 15:15:41,151 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:15:41,151 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:15:41,425 - App session started
+2025-02-25 15:26:04,881 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:26:04,881 - Starting up TCP server on localhost:63924
+2025-02-25 15:26:04,921 - Flet app has started...
+2025-02-25 15:26:04,921 - App URL: tcp://localhost:63924
+2025-02-25 15:26:04,921 - Starting Flet View app...
+2025-02-25 15:26:04,921 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:26:04,921 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:26:05,176 - App session started
+2025-02-25 15:31:09,926 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:31:09,942 - Starting up TCP server on localhost:63997
+2025-02-25 15:31:09,973 - Flet app has started...
+2025-02-25 15:31:09,973 - App URL: tcp://localhost:63997
+2025-02-25 15:31:09,973 - Starting Flet View app...
+2025-02-25 15:31:09,973 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:31:09,973 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:31:10,227 - App session started
+2025-02-25 15:31:34,824 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:31:34,825 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:31:34,826 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-25 15:34:32,972 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:34:32,986 - Starting up TCP server on localhost:64057
+2025-02-25 15:34:33,003 - Flet app has started...
+2025-02-25 15:34:33,019 - App URL: tcp://localhost:64057
+2025-02-25 15:34:33,019 - Starting Flet View app...
+2025-02-25 15:34:33,019 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:34:33,019 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:34:33,264 - App session started
+2025-02-25 15:34:45,907 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:34:45,909 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:34:45,914 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 234, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:34:52,082 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:34:52,084 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:34:52,084 - tipo de contraseña encriptada <class 'bytes'>
+2025-02-25 15:36:42,446 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:36:42,446 - Starting up TCP server on localhost:64107
+2025-02-25 15:36:42,477 - Flet app has started...
+2025-02-25 15:36:42,493 - App URL: tcp://localhost:64107
+2025-02-25 15:36:42,493 - Starting Flet View app...
+2025-02-25 15:36:42,493 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:36:42,493 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:36:42,740 - App session started
+2025-02-25 15:36:51,996 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:51,998 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:51,999 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:52,836 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:52,838 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:52,839 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:55,461 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:55,463 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:36:55,465 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:08,455 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:38:08,471 - Starting up TCP server on localhost:64157
+2025-02-25 15:38:08,486 - Flet app has started...
+2025-02-25 15:38:08,502 - App URL: tcp://localhost:64157
+2025-02-25 15:38:08,502 - Starting Flet View app...
+2025-02-25 15:38:08,502 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:38:08,502 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:38:08,750 - App session started
+2025-02-25 15:38:17,959 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:17,961 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:35,128 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:35,130 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:35,135 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 235, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:38:45,456 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:45,459 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:38:45,461 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 235, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:39:32,316 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:39:32,331 - Starting up TCP server on localhost:64210
+2025-02-25 15:39:32,349 - Flet app has started...
+2025-02-25 15:39:32,364 - App URL: tcp://localhost:64210
+2025-02-25 15:39:32,364 - Starting Flet View app...
+2025-02-25 15:39:32,364 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:39:32,364 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:39:32,764 - App session started
+2025-02-25 15:39:39,981 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:39:39,982 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:36,426 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:41:36,438 - Starting up TCP server on localhost:64267
+2025-02-25 15:41:36,484 - Flet app has started...
+2025-02-25 15:41:36,484 - App URL: tcp://localhost:64267
+2025-02-25 15:41:36,484 - Starting Flet View app...
+2025-02-25 15:41:36,500 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:41:36,500 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:41:36,751 - App session started
+2025-02-25 15:41:44,139 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:44,141 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:44,144 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:41:46,835 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:46,837 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:46,839 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:41:47,171 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,173 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,175 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:41:47,364 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,365 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,367 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:41:47,540 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,542 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,544 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:41:47,707 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,709 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:41:47,711 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:42:35,062 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:42:35,081 - Starting up TCP server on localhost:64296
+2025-02-25 15:42:35,110 - Flet app has started...
+2025-02-25 15:42:35,110 - App URL: tcp://localhost:64296
+2025-02-25 15:42:35,110 - Starting Flet View app...
+2025-02-25 15:42:35,110 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:42:35,110 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:42:35,378 - App session started
+2025-02-25 15:42:43,909 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:43,911 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:43,915 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:42:44,860 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:44,862 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:44,864 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:42:45,349 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,350 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,353 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:42:45,533 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,535 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,537 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:42:45,725 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,727 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,729 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:42:45,917 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,919 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:42:45,920 - C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py - Traceback (most recent call last):
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\views\app.py", line 237, in save_password
+    PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_factory.py", line 34, in create
+    password_id = PasswordDAO.create(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password_dao.py", line 54, in create
+    password.crypted_password,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'crypted_password'
+
+2025-02-25 15:43:29,546 - Assets path configured: C:\Users\eluna\proyectos\secure_password_generator_desktop\assets
+2025-02-25 15:43:29,562 - Starting up TCP server on localhost:64313
+2025-02-25 15:43:29,593 - Flet app has started...
+2025-02-25 15:43:29,597 - App URL: tcp://localhost:64313
+2025-02-25 15:43:29,597 - Starting Flet View app...
+2025-02-25 15:43:29,597 - Looking for Flet executable at: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:43:29,597 - Flet View found in: C:\Users\eluna\AppData\Local\anaconda3\envs\passgen\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-02-25 15:43:29,838 - App session started
+2025-02-25 15:43:35,863 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:43:35,864 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:43:46,702 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:43:46,704 - C:\Users\eluna\proyectos\secure_password_generator_desktop\models\password\password.py - password value didnt founded
+2025-02-25 15:43:46,704 - tipo de contraseña encriptada <class 'bytes'>

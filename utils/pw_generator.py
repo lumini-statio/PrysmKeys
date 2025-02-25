@@ -5,11 +5,11 @@ def generator(length: str, mayusc: bool, especiales: bool, nums: bool):
     characters = list("abcdefghijklmnopqrstuvwxyz")
     generated_password = ""
     
-    if mayusc == 'YES':
+    if mayusc == True:
         characters.extend(list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")) #if parameter mayusc is True, extend the characters variable
-    if especiales == 'YES':
+    if especiales == True:
         characters.extend(list('!@#$%^&*.()')) #if parameter especiales is True, extend the characters variable
-    if nums == 'YES': 
+    if nums == True: 
         characters.extend(list('1234567890')) #if parameter nums is True, extend the characters variable
     
     # creates the password with an iteration in the length parameter
