@@ -10,6 +10,7 @@ class Password:
     Password model
     """
     id: int
+    service_name: str
     value: PasswordValue
     user_id: int
 

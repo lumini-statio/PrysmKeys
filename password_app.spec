@@ -14,7 +14,8 @@ a = Analysis(
         ('models/user/*.py', 'models/user'),
         ('state/*.py', 'state'),
         ('utils/*.py', 'utils'),
-        ('self_data.db', '.')
+        ('data.db', '.'),
+        ('icon.ico', '.')
     ],
     hiddenimports=[
         'anyio._backends._asyncio',
@@ -84,6 +85,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon='icon.ico'
 )
 
 coll = COLLECT(

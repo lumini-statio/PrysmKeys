@@ -171,10 +171,12 @@ def main(page: ft.Page):
         function tath register the changes in dropdowns
         """
         try:
-            if not uppercase_dropdown.value:
-                uppercase_dropdown.value == 'YES'
-            if not special_digits_dropdown.value:
-                special_digits_dropdown.value == 'YES'
+            if not uppercase_switch.value:
+                uppercase_switch.value == True
+            if not specials_switch.value:
+                specials_switch.value == True
+            if not nums_switch.value:
+                nums_switch.value == True
             page.update()
         except:
             log(f'{__file__} - {traceback.format_exc()}')
@@ -188,9 +190,9 @@ def main(page: ft.Page):
             if password_length.value != '':
                 pw = generator(
                     length=password_length.value, 
-                    mayusc=uppercase_dropdown.value, 
-                    especiales=special_digits_dropdown.value, 
-                    nums=nums_dropdown.value
+                    mayusc=uppercase_switch.value, 
+                    especiales=specials_switch.value, 
+                    nums=nums_switch.value
                     )
                 password_field.value = pw
                 password_field.update()
@@ -224,16 +226,29 @@ def main(page: ft.Page):
             # Check if the password already exists
             passwords = PasswordDAO.get_all(user_id=user.get_id())
             for _, pw in enumerate(passwords):
-                decrypted_password = Password.decrypt_value(pw[1])
+                decrypted_password = Password.decrypt_value(pw[2])
                 if decrypted_password == password_field.value:
                     # Show error message if password already exists
                     password_validation_text.value = 'This passwords its already saved'
+                    password_field.border_color = ft.Colors.RED
+                    password_field.update()
                     password_validation_text.update()
-                    return
-
-            # Process and save the new password
-            PasswordFactory().create(password_field.value, user.get_id())
+                    return None
             
+            if not service_field.value == '' and not password_field.value == '':
+                password_validation_text.value = ''
+                service_field.border_color = ft.Colors.TRANSPARENT
+                password_field.border_color = ft.Colors.TRANSPARENT
+                # Process and save the new password
+                PasswordFactory().create(service_field.value, password_field.value, user.get_id())
+            else:
+                password_validation_text.value = "All fields must be complete"
+                service_field.border_color = ft.Colors.RED
+                password_field.border_color = ft.Colors.RED
+            
+            password_validation_text.update()
+            password_field.update()
+            service_field.update()
             # Update the list view
             update_listview()
         except Exception as e:
@@ -258,7 +273,7 @@ def main(page: ft.Page):
 
         # Add each password to the list view
         for _, pw in enumerate(passwords):
-            decrypted_password = Password.decrypt_value(pw[1])
+            decrypted_password = Password.decrypt_value(pw[2])
 
             value = ft.Text(
                     f'{decrypted_password}',
@@ -269,8 +284,8 @@ def main(page: ft.Page):
             
             password_component = ft.Row([
                 ft.Text(
-                    f'{pw[0]}',
-                    size=Styles.MIN_TEXT_SIZE,
+                    f'{pw[1]}'.upper(),
+                    size=Styles.MID_TEXT_SIZE,
                     color=ft.Colors.WHITE,
                     width=300
                 ),
@@ -448,47 +463,25 @@ def main(page: ft.Page):
         border_color=Styles.BORDER_COLOR.value
     )
 
-    uppercase_dropdown = ft.Dropdown(
-        on_change=option_onchange,
-        options=[
-            ft.dropdown.Option('YES'),
-            ft.dropdown.Option('NO')
-            ],
-        value='YES',
-        width=100,
-        bgcolor=Styles.DROP_COLOR.value,
-        border=None,
-        border_color=Styles.BORDER_COLOR.value
-    )
+    uppercase_switch = ft.Switch(value=True)
 
-    special_digits_dropdown = ft.Dropdown(
-        on_change=option_onchange,
-        options=[
-            ft.dropdown.Option('YES'),
-            ft.dropdown.Option('NO')
-            ],
-        value='YES',
-        width=100,
-        bgcolor=Styles.DROP_COLOR.value,
-        border=None,
-        border_color=Styles.BORDER_COLOR.value
-    )
+    specials_switch = ft.Switch(value=True)
 
-    nums_dropdown = ft.Dropdown(
-        on_change=option_onchange,
-        options=[
-            ft.dropdown.Option('YES'),
-            ft.dropdown.Option('NO')
-            ],
-        value='YES',
-        width=100,
-        bgcolor=Styles.DROP_COLOR.value,
-        border=None,
-        border_color=Styles.BORDER_COLOR.value
+    nums_switch = ft.Switch(value=True)
+
+    # service name field
+    service_field = ft.TextField(
+        hint_text='Service Name',
+        bgcolor=Styles.BG_COLOR.value,
+        border_color=Styles.BORDER_COLOR.value,
+        expand=True,
+        color=ft.Colors.WHITE,
+        text_size=Styles.MID_TEXT_SIZE
     )
 
     # input tath shows the last created password
     password_field = ft.TextField(
+        hint_text='Password Value',
         bgcolor=Styles.BG_COLOR.value,
         border_color=Styles.BORDER_COLOR.value,
         expand=True,
@@ -516,25 +509,28 @@ def main(page: ft.Page):
                     validation_text
                 ]),
                 ft.Column([
-                    uppercase_dropdown,
+                    uppercase_switch,
                     ft.Text('Uppercase', color=ft.Colors.BLUE_200, size=Styles.MIN_TEXT_SIZE)
                 ]),
                 ft.Column([
-                    special_digits_dropdown,
-                    ft.Text('Signs', color=ft.Colors.BLUE_200, size=Styles.MIN_TEXT_SIZE)
+                    specials_switch,
+                    ft.Text('Specials', color=ft.Colors.BLUE_200, size=Styles.MIN_TEXT_SIZE)
                 ]),
                 ft.Column([
-                    nums_dropdown,
+                    nums_switch,
                     ft.Text('Numbers', color=ft.Colors.BLUE_200, size=Styles.MIN_TEXT_SIZE)
                 ]),
                 ft.Column([
                     btn_create,
                     ft.Text('', size=Styles.MIN_TEXT_SIZE)
                 ]),
-            ]),
+            ],
+            spacing=20
+            ),
             ft.Row([
                 ft.Row([
                     ft.Column([
+                        service_field,
                         password_field,
                         password_validation_text
                     ],

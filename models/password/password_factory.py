@@ -28,17 +28,15 @@ class PasswordFactory:
             return password_value
 
     @classmethod
-    def create(cls, value: str, user_id: int) -> None:
+    def create(cls, service: str, value: str, user_id: int) -> None:
         processed_value = cls.processing_password(value)
 
-        PasswordDAO.create_table()
         password_id = PasswordDAO.create(
+            service_name=service,
             password=processed_value,
             user_id=user_id
         )
 
-        log(password_id)
-        
         if password_id == None:
             log(f'{__file__} - pw_object is void')
             return None

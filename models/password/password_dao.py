@@ -5,7 +5,7 @@ import traceback
 
 
 def connection(*args):
-    con = sqlite3.connect('automation.db')
+    con = sqlite3.connect('data.db')
     con.execute('PRAGMA foreign_keys = ON;')
     return con
 
@@ -15,12 +15,13 @@ class PasswordDAO:
     Passwords class to manage data (puto el que lee jaja xd lol)
     """
     def create_table():
-        con = connection('automation.db')
+        con = connection()
         cursor = con.cursor()
         
         query = """
                 CREATE TABLE IF NOT EXISTS passwords(
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    service_name TEXT NOT NULL,
                     value BLOB NOT NULL,
                     user_id INTEGER NOT NULL,
                     FOREIGN KEY (user_id) REFERENCES users (id)
@@ -37,16 +38,23 @@ class PasswordDAO:
         finally:
             con.close()
 
-    def create(password: PasswordValue, user_id: int):
+    def create(service_name: str, password: PasswordValue, user_id: int):
         con = connection()
         cursor = con.cursor()
 
         query = """
-                INSERT INTO passwords(value, user_id) VALUES(?, ?)
+                INSERT INTO passwords(service_name, value, user_id) VALUES(?, ?, ?)
                 """
         
         try:
-            cursor.execute(query, (password.crypted_password, user_id))
+            cursor.execute(
+                query, 
+                (
+                    service_name, 
+                    password.crypted_password, 
+                    user_id
+                ))
+
             con.commit()
             last_row_id = cursor.lastrowid
             return last_row_id
