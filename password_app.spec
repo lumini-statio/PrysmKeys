@@ -15,7 +15,7 @@ a = Analysis(
         ('state/*.py', 'state'),
         ('utils/*.py', 'utils'),
         ('data.db', '.'),
-        ('assets/*.ico', 'assets')
+        ('icon.ico', '.')
     ],
     hiddenimports=[
         'anyio._backends._asyncio',
