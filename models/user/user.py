@@ -94,7 +94,10 @@ class User:
         if the user is authenticated returns True,
         if not, returns False
         '''
-        return self.state
+        if isinstance(self.state, AuthenticatedState):
+            return True
+        elif isinstance(self.state, NotAuthenticatedState):
+            return False
     
     def __str__(self):
         return self.username

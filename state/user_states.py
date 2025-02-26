@@ -15,11 +15,11 @@ class AuthenticatedState(UserState):
         user.state = NotAuthenticatedState()
 
     def __str__(self):
-        return 'True'
+        return True
 
 class NotAuthenticatedState(UserState):
     def change_user_state(self, user):
         user.state = AuthenticatedState()
     
     def __str__(self):
-        return 'False'
+        return False
