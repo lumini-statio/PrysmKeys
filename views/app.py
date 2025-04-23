@@ -33,7 +33,6 @@ def main(page: ft.Page):
     page.window.width = 1000
     page.window.height = 700
     page.padding = 0
-    page.bgcolor = ft.Colors.BACKGROUND
     page.theme_mode = ft.ThemeMode.DARK
 
     page.theme = Styles.PAGE_THEME.value
