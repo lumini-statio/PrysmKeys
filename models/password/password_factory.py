@@ -2,7 +2,6 @@ from models.password.password_dao import PasswordDAO
 from models.password_value.value_dao import ValueDAO
 from models.password_value.password_value import PasswordValue
 from cryptography.fernet import Fernet
-from utils.logger import log
 
 
 class PasswordFactory:
@@ -23,8 +22,6 @@ class PasswordFactory:
                 password_id=None
             )
 
-            log(f'tipo de contraseña encriptada {type(crypted_value)}')
-            
             return password_value
 
     @classmethod
@@ -38,7 +35,6 @@ class PasswordFactory:
         )
 
         if password_id == None:
-            log(f'{__file__} - pw_object is void')
             return None
 
         processed_value.set_password_id(password_id)

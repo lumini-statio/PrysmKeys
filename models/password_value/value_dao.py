@@ -1,6 +1,5 @@
 import sqlite3
 from models.password_value.password_value import PasswordValue
-from utils.logger import log
 import traceback
 
 
@@ -34,7 +33,7 @@ class ValueDAO:
             )
             con.commit()
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
     
@@ -51,7 +50,7 @@ class ValueDAO:
             con.close()
             return password_value
         except ConnectionError as e:
-            log(f'{__file__} - {e}\nproblem with value creating function')
+            pass
         finally:
             con.close()
 
@@ -66,7 +65,7 @@ class ValueDAO:
             con.close()
             return data
         except ConnectionError as e:
-            log(f'{__file__} - {e}\nproblem with value selection function')
+            pass
         
         con.close()
 
@@ -78,6 +77,6 @@ class ValueDAO:
             cursor.execute("DELETE FROM password_values WHERE password_id = ?", (password_id,))
             con.commit()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()

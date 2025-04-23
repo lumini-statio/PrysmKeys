@@ -1,5 +1,4 @@
 import sqlite3
-from utils.logger import log
 import traceback
 
 
@@ -29,7 +28,7 @@ class UserDAO():
             cursor.execute(query)
             con.commit()
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
 
@@ -45,7 +44,7 @@ class UserDAO():
             cursor.execute(query, (username, password))
             con.commit()
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
 
@@ -64,7 +63,7 @@ class UserDAO():
 
             return users
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
 
@@ -80,6 +79,6 @@ class UserDAO():
             cursor.execute(query, (user_id,))
             con.commit()
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()

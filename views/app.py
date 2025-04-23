@@ -7,7 +7,6 @@ from models.user.user_dao import UserDAO
 from models.password.password_dao import PasswordDAO
 from models.password_value.value_dao import ValueDAO
 from utils.pw_generator import generator
-from utils.logger import log
 from .config import Styles
 import re
 import traceback
@@ -65,7 +64,7 @@ def main(page: ft.Page):
                 login_error_text.value = 'Invalid username or password'
                 login_error_text.update()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
     
     def register(e):
         """
@@ -100,7 +99,7 @@ def main(page: ft.Page):
                 dialog.open = True
                 page.update()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
     
 
     def update_view():
@@ -116,7 +115,7 @@ def main(page: ft.Page):
                 content_area.content = login_view
             page.update()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
 
     def open_register(e):
         """
@@ -163,7 +162,7 @@ def main(page: ft.Page):
             btn_create.update()
             validation_text.update()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
 
     def option_onchange(e):
         """
@@ -178,7 +177,7 @@ def main(page: ft.Page):
                 nums_switch.value == True
             page.update()
         except:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
     
     def generate():
         """
@@ -198,7 +197,7 @@ def main(page: ft.Page):
             else:
                 validation_text.value = 'Needs to specify the password length...'
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
 
     def copy_to_clipboard(field):
         """
@@ -207,7 +206,7 @@ def main(page: ft.Page):
         try:
             page.set_clipboard(field.value)
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
     
     def delete_password(password_id):
         try:
@@ -218,7 +217,7 @@ def main(page: ft.Page):
             # Update the list view
             update_listview()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
 
     def save_password():
         try:
@@ -251,7 +250,7 @@ def main(page: ft.Page):
             # Update the list view
             update_listview()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
     
     def handle_logout(e):
         try:
@@ -260,7 +259,7 @@ def main(page: ft.Page):
             user.state.change_user_state(user=user)
             update_view()
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
     
     def update_listview():
         # Clear all controls from the list

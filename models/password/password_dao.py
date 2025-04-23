@@ -1,6 +1,5 @@
 import sqlite3
 from models.password_value.password_value import PasswordValue
-from utils.logger import log
 import traceback
 
 
@@ -34,7 +33,7 @@ class PasswordDAO:
             cursor.execute(query)
             con.commit()
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
 
@@ -59,7 +58,7 @@ class PasswordDAO:
             last_row_id = cursor.lastrowid
             return last_row_id
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
 
@@ -77,7 +76,7 @@ class PasswordDAO:
             
             return passwords
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()
 
@@ -93,6 +92,6 @@ class PasswordDAO:
             cursor.execute(query, (password_id, user_id))
             con.commit()
         except ConnectionError as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
         finally:
             con.close()

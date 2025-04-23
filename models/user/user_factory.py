@@ -1,7 +1,6 @@
 from models.user.user import User
 from models.user.user_dao import UserDAO
 from models.password.hasher import hash_password
-from utils.logger import log
 
 
 class UserFactory():
@@ -46,7 +45,7 @@ class UserFactory():
                     'user': user
                 }
             else:
-                log(f'{__file__} - final_user its void')
+                pass
 
         
         return {

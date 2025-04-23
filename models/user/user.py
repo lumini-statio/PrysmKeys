@@ -1,7 +1,6 @@
 from state.user_states import NotAuthenticatedState, AuthenticatedState
 from models.password.hasher import hash_password
 from models.user.user_dao import UserDAO
-from utils.logger import log
 import traceback
 
 
@@ -87,7 +86,7 @@ class User:
             founded = [user for user in users if user[1]==username.strip() and user[2]==password_hashed]
             return founded[0]
         except Exception as e:
-            log(f'{__file__} - {traceback.format_exc()}')
+            pass
 
     def is_authenticated(self):
         '''

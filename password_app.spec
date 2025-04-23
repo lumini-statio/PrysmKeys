@@ -33,7 +33,6 @@ a = Analysis(
         'oauthlib.oauth2',
         'oauthlib.oauth1',
         'sqlite3',
-        'logs',
         'models',
         'models.password',
         'models.password_value',
