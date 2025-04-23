@@ -1,4 +1,4 @@
-# SePaGen v1.4.1
+# PrysmKeys v1.4.1
 
 > [!NOTE]
 > You can find the installer on the latest release!
